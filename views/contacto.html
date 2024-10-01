@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/css/styles.css" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contacto</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="/index.html">Programas</a></li>
+        <li><a href="/index.html">Horarios</a></li>
+        <li><a href="/index.html">Noticias</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <form action="enviarContacto.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="mensaje">Mensaje:</label><br />
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          rows="4"
+          cols="50"
+          required
+        ></textarea
+        ><br /><br />
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Canal de Televisión. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
